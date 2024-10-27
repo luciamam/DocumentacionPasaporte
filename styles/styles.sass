@@ -1,0 +1,98 @@
+@use 'presets'
+@use 'mixins'
+
+
+
+body
+    width: 100vh
+    width: 100vw
+
+#contedor-global
+    height: 100vh
+    width: 100vw
+    //border:2px solid red
+
+
+#inicio
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    position: relative
+    background: rgb(45,135,230)
+    background: linear-gradient(0deg, rgba(45,135,230,1) 0%, rgba(255,255,255,1) 100%)
+    header
+        @include mixins.flex(center,center,row)
+        height: 15%
+        width: 100%
+        background-color: rgb(37,87,167)
+        //border: 1px solid blue
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .4)
+        div
+            @include mixins.flex(center,center,row)
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            overflow: hidden
+            //border: 1px solid blue
+            
+            img
+                width: 80%
+                height: 70%
+                object-fit: contain
+    
+    h1
+        width: 90%
+        //border: 1px solid
+        text-align: center
+        letter-spacing: 1px
+        color: #2b2d42
+        font-size: 28px
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, .44)
+        margin-left: 25PX
+        margin-bottom: 30px
+        margin-top: 30px
+    
+
+
+#elegir-opciones
+    position: relative
+    width: 100%
+    height: 59%
+    border: 4px solid green
+    @include mixins.flex-column-center
+    margin-bottom: 10px
+
+    #parrafo
+        width: 100%
+        border: 1px solid red
+        color: rgba(0, 0, 0, .7)
+        letter-spacing: 1px
+        font-size: 14px
+        padding: 10px
+        position: absolute
+        display: flex
+        flex-direction: column
+        bottom: 0
+        left: 0
+        background-color: white
+        i
+            color:#FE6358 
+            font-weight: 700
+
+
+
+
+
+footer
+     @include mixins.flex-row
+     position: absolute
+     bottom: 0
+     background-color: rgb(37,87,167)
+     width: 100%
+     height: 10%
+     //border: 9px solid orange
+     #span-copy
+        text-align: center
+        width: 60%
+        color: white
