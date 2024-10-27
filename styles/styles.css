@@ -6,12 +6,19 @@
 }
 
 body {
-  height: 100dvh;
+  height: 100svh;
   width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 #contedor-global {
-  height: 100dvh;
+  height: 100svh;
   width: 100vw;
 }
 
