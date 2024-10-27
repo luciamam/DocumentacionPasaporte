@@ -6,12 +6,12 @@
 }
 
 body {
-  height: 100svh;
+  height: 100dvh;
   width: 100vw;
 }
 
 #contedor-global {
-  height: 100svh;
+  height: 100dvh;
   width: 100vw;
 }
 
