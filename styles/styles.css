@@ -99,6 +99,11 @@ body {
   margin-left: 10px;
 }
 
+label {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   flex-direction: row;

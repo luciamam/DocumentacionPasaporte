@@ -1,14 +1,8 @@
 let input_radios=document.querySelectorAll('.radios')
-
-
-
-
 input_radios.forEach(input_radio=>{
     input_radio.addEventListener('change',()=>{
         if(input_radio.checked){
             window.location.href=input_radio.value;
-
-
         }
 
     })

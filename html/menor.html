@@ -1,24 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADulto</title>
 </head>
+
 <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
 
-    <div id="contenedor-padre-adulto">
-        <section id="adulto">
-            <h1>menor</h1>
-            
-        </section>
 
-    </div>
-    <footer>
-        
 
-    </footer>
 
     
+Gracias por seguir Google I/O. Mira contenido a pedido.
+Se usó la API de Cloud Translation para traducir esta página.
+Switch to English
+web.dev
+Aprendizaje
+HTML
+¿Te resultó útil?
+
+HTML semántico 
+
+bookmark_border
+Con más de 100 elementos HTML y la posibilidad de crear elementos personalizados, hay infinitas maneras de marcar tu contenido. pero algunas maneras, particularmente semánticamente, son mejores que otras.
+
+Semántico significa "relacionado con el significado". Escribir código HTML semántico consiste en utilizar elementos HTML para estructurar el contenido según el significado de cada elemento, no su apariencia.
+
+Esta serie todavía no abarca muchos elementos HTML, pero incluso sin conocer HTML, los siguientes dos fragmentos de código muestran cómo el lenguaje de marcado semántico puede proporcionar contexto al contenido. Ambos usan un recuento de palabras en lugar de ipsum lorem para ahorrar algo de desplazamiento. Usa la imaginación para expandir "treinta palabras" en 30 palabras:
+
+El primer fragmento de código usa <div> y <span>, dos elementos sin valor semántico.
+
+
+<div>
+ <span>Three words</span>
+ <div>
+   <a>one word</a>
+   <a>one word</a>
+   <a>one word</a>
+   <a>one word</a>
+ </div>
+</div>
+<div>
+ <div>
+   <div>five words</div>
+ </div>
+ <div>
+   <div>three words</div>
+   <div>forty-six words</div>
+   <div>forty-four words</div>
+ </div>
+ <div>
+   <div>seven words</div>
+   <div>sixty-eight words</div>
+   <div>forty-four words</div>
+ </div>
+</div>
+<div>
+  <span>five words</span>
+</div>
+¿Tienes una idea de a qué se expanden esas palabras? En realidad, no.
+
+Reescribiremos este código con elementos semánticos:
+
+
+<header>
+ <h1>Three words</h1>
+ <nav>
+   <a>one word</a>
+   <a>one word</a>
+   <a>one word</a>
+   <a>one word</a>
+ </nav>
+</header>
+<main>
+ <header>
+   <h1>five words</h1>
+ </header>
+ <section>
+   <h2>three words</h2>
+   <p>forty-six words</p>
+   <p>forty-four words</p>
+ </section>
+ <section>
+   <h2>seven words</h2>
+   <p>sixty-eight words</p>
+   <p>forty-four words</p>
+ </section>
+</main>
+<footer>
+ <p>five words</p>
+</footer>
 </body>
+
 </html>

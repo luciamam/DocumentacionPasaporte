@@ -10,6 +10,8 @@
     <meta name="author" content="Lucia Mansogo Mbang">
     <link rel="stylesheet" href="./styles/styles.css">
     <meta name="color-scheme" content="light only">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -28,13 +30,13 @@
             <h1>Documentacion Pasaporte Biometrico</h1>
             <div id="elegir-opciones">
                 <div id="opcion-adulto ">
-                    <input type="radio" id="input-adulto" name="opcion" value="./html/adulto.html" class="radios">
-                    <label for="">Para un adulto </label>
+                    <input hidden type="radio" id="input-adulto" name="opcion" value="./html/adulto.html" class="radios">
+                    <label for="input-adulto"><i class="fa-solid fa-user"></i> Para un adulto </label>
                     
                 </div>
                 <div id="opcion-menor">
-                    <input type="radio" name="opcion" id ="input-menor" value="./html/menor.html" class="radios">
-                    <label for=""> Para un menor </label>
+                    <input hidden type="radio" name="opcion" id ="input-menor" value="./html/menor.html" class="radios">
+                    <label for="input-menor"><i class="fa-solid fa-child"></i> Para un menor </label>
                 </div> 
                 <p id="parrafo" class="animate__animated animate__lightSpeedInLeft"> Informacion extraida  <i>  CNEDOGE</i></p>
             </div>
